@@ -2,8 +2,16 @@ import React from "react";
 import Button from '@material-ui/core/Button';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import generateDungeon from '/src/Dungeon/dungeon.js';
 
 class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      dungeon: generateDungeon(),
+    }
+
+  }
   render() {
     const { name } = this.props;
     return (
@@ -15,6 +23,9 @@ class App extends React.Component {
         <button type="button" class="btn btn-primary">
           This is a bootstrap button
         </button>
+        <>
+        {this.state.dungeon}
+        </>
       </>
     );
   }
