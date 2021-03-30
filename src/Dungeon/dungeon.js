@@ -9,7 +9,9 @@ const options = {
 }
 
 const generateDungeon = () => {
-  return NewDungeon(options);
+  cont NewDungeon = NewDungeon(options);
+
+
 }
 
 export default generateDungeon;
