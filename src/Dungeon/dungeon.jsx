@@ -9,7 +9,7 @@ const options = {
 }
 
 const generateDungeon = () => {
-  cont NewDungeon = NewDungeon(options);
+  const NewDungeon = NewDungeon(options);
 
 
 }

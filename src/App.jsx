@@ -2,7 +2,7 @@ import React from "react";
 import Button from '@material-ui/core/Button';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import generateDungeon from '/src/Dungeon/dungeon.js';
+import generateDungeon from '/src/Dungeon/dungeon.jsx';
 
 class App extends React.Component {
   constructor() {
